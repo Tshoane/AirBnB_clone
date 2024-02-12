@@ -1,19 +1,17 @@
 #!/usr/bin/python3
-"""Defines ``BaseModel`` subclass, ``Amenity`` """
-
+"""Define an Amenity class"""
 from models.base_model import BaseModel
 
 
 class Amenity(BaseModel):
     """
-    Defines Amenity object
+    Represent an Amenity class
 
-    ...
-
-    Class Attributes
-    ----------------
-    name (str):
-        name of an ``Amenity`` instance
+    Attributes:
+        name(String)
     """
+    name = ""
 
-    name = ''
+    def __int__(self, *args, **kwargs):
+        """Initializes Amenity"""
+        super().__init__(*args, **kwargs)
